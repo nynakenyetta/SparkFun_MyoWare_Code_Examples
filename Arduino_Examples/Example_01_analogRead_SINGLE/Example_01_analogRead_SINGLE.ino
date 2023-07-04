@@ -1,4 +1,6 @@
 /*
+  I am making an edit to this code because it did not work for my sensor. Below is the updated version that did work for me.
+  
   MyoWare Example_01_analogRead_SINGLE
   SparkFun Electronics
   Pete Lewis
@@ -24,9 +26,9 @@
 
 void setup() 
 {
-  Serial.begin(115200);
-  while (!Serial); // optionally wait for serial terminal to open
-  Serial.println("MyoWare Example_01_analogRead_SINGLE");
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+  Serial.println("Test");
 }
 
 void loop() 
